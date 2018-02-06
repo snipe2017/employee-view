@@ -11,17 +11,16 @@ export class AdminService {
 
 addEmployee(model) {
   console.log(model);
-  return this.http.post('http://192.168.1.127:8080/DemoAPI/rest/admin/registerEmployee', model
+  return this.http.post('http://192.168.1.111:8082/DemoAPI/rest/admin/registerEmployee', model
     ).map(res => res.json());
 }
 
 getEmp(){
-  return this.http.get('http://192.168.1.127:8080/DemoAPI/rest/employee').map(res => res.json());
+  return this.http.get('http://192.168.1.111:8082/DemoAPI/rest/employee').map(res => res.json());
 }
 
 deleteEmp(emailId: any){
-  return this.http.delete('http://192.168.1.127:8080/DemoAPI/rest/deleteEmployee' + emailId)
-  .map(res => res.json());
-  
+  return this.http.delete('http://192.168.1.111:8082/DemoAPI/rest/deleteemp' + emailId)
+    .map(res => res.json());
 }
 }
