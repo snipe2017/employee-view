@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AdminService } from '../../.././services/admin.service';
 
 @Component({
   selector: 'app-view-emp',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view-emp.component.css']
 })
 export class ViewEmpComponent implements OnInit {
+  employees = [];
 
-  constructor() { }
+  constructor(private adminService: AdminService) { }
 
   ngOnInit() {
+    this.adminService.getEmp()
+    .subscribe(
+      model => this.employees = model
+    );
   }
 
 }

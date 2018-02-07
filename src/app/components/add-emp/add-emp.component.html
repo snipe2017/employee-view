@@ -1,1 +1,67 @@
-<p>hi</p>
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="name">FirstName:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="name1" name="fname" [(ngModel)]="model.fname" placeholder="Enter your Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="name">LastName:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="name2" name="lname" [(ngModel)]="model.lname" placeholder="Enter your Lastname">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="name">Gender:</label>
+          <div class="col-sm-10">
+            <input type="radio" name="gender" value="male" [(ngModel)]="model.gender" checked> Male
+            <input type="radio" name="gender" value="female" [(ngModel)]="model.gender"> Female
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="name">DOJ:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="name3" name="doj" [(ngModel)]="model.doj" placeholder="Date of joining">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="position">Qualification:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="position" name="qualification" [(ngModel)]="model.qualification" placeholder="Enter your Qualification">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="name">EmailId:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="name5" name="emailId" [(ngModel)]="model.emailId" placeholder="Enter your EmailId">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="name">Password:</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="name6" name="pwd" [(ngModel)]="model.pwd" placeholder="Enter your Password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="name">Phone:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="name7" name="mobileNo" [(ngModel)]="model.mobileNo" placeholder="Enter your Phone">
+          </div>
+        </div>
+        <!-- <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+          </div>
+        </div>
+      </div> -->
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-info" (click)="addEmployee(model)">Save</button>
+          </div>
+        </div>
+      </form>
