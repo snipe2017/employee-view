@@ -1,5 +1,5 @@
 body {
-  background: #f1f4f7;
+  background: #c8d3df;
   padding-top: 60px;
   font-size: 14px;
   color: #444444;
@@ -9,7 +9,7 @@ p {
   color: #777; }
 
 a, a:hover, a:focus {
-  color: #30a5ff; }
+  color: #f2f6fa; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #444444; }

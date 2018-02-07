@@ -11,6 +11,8 @@ import { UsersComponent} from '../components/users/users.component';
 import { LogoutComponent} from '../components/logout/logout.component';
 
 import { AppRoutingModule } from './app.routing';
+import { AddEmpComponent } from './components/add-emp/add-emp.component';
+import { ViewEmpComponent } from './components/view-emp/view-emp.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { AppRoutingModule } from './app.routing';
     DashboardComponent,
     EmployeeComponent,
     UsersComponent,
-    LogoutComponent
+    LogoutComponent,
+    AddEmpComponent,
+    ViewEmpComponent
   ],
   imports: [
     BrowserModule,

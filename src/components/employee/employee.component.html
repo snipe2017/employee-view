@@ -1,3 +1,7 @@
+<a [routerLink]="['Add']" >AddEmployee</a>
+ <a [routerLink]="['view']">ViewEmployee</a>
+     <router-outlet></router-outlet>   
+    
 <div class="row">
   <div class="col-lg-12">
 
@@ -55,7 +59,7 @@
         <div class="form-group">
           <label class="control-label col-sm-2" for="name">Password:</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" name="pwd" [(ngModel)]="model.pwd" placeholder="Enter your Password">
+            <input type="password" class="form-control" id="name" name="pwd" [(ngModel)]="model.pwd" placeholder="Enter your Password">
           </div>
         </div>
         <div class="form-group">
@@ -75,7 +79,7 @@
       </div> -->
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default" (click)="addEmployee(model)">Save</button>
+            <button type="submit" class="btn btn-info" (click)="addEmployee(model)">Save</button>
           </div>
         </div>
       </form>
@@ -91,11 +95,11 @@
             <th width=200>Password</th>
             <th width=200>Phone</th>
             <th width=200>Male</th>
-            <th width=200>Actions</th>
+            <th width=800>Actions</th>
           </tr>
         </thead>
         <tbody>
-          <tr  *ngFor="let employee of employees">
+          <tr *ngFor="let employee of employees">
             <td>{{employee.fname}}</td>
             <td>{{employee.lname}}</td>
             <td>{{employee.doj}}</td>
@@ -105,10 +109,10 @@
             <td>{{employee.mobileNo}}</td>
             <td>{{employee.gender}}</td>
             <td>
-              <a class="btn btn-success" (click)="editEmployee(i)">Edit</a>
-              <a class="btn btn-danger" (click)="deleteEmployee()">Delete</a>
+              <a class="btn btn-info" (click)="editEmployee(i)">Edit</a>
+              <a class="btn btn-warning" (click)="deleteEmployee()">Delete</a>
             </td>
-            </tr>
+          </tr>
         </tbody>
       </table>
       <!-- <h2>Update data:</h2>

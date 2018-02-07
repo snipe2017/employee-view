@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AdminService } from './../../services/admin.service';
 import { modelGroupProvider } from '@angular/forms/src/directives/ng_model_group';
-
+import {AddEmpComponent} from '../../app/components/add-emp/add-emp.component';
+import {ViewEmpComponent } from '../../app/components/view-emp/view-emp.component';
 
 @Component({
   selector: 'app-employee',
@@ -33,6 +34,7 @@ export class EmployeeComponent implements OnInit {
       () => console.log("success")
     );
     this.model ={};
+    this.msg="Record is successfully added....."
   } 
 
   deleteEmployee(employee)
