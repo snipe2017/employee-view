@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AdminService } from '../../.././services/admin.service';
 
+import{model} from '../../../services/model';
 @Component({
   selector: 'app-add-emp',
   templateUrl: './add-emp.component.html',
@@ -13,8 +14,6 @@ export class AddEmpComponent implements OnInit {
   ngOnInit() {
   }
   model:any={};
-  model2:any={};
-  msg:any="";
   addEmployee(model){
     // this.employees.push(this.model);
     this.adminService.addEmployee(this.model)
@@ -24,7 +23,5 @@ export class AddEmpComponent implements OnInit {
       (error) => console.log(error),
       () => console.log("success")
     );
-    this.model ={};
-    this.msg="Record is successfully added....."
   } 
 }

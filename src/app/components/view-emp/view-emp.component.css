@@ -13,17 +13,34 @@ h1{
     font-size: 1em;
 
 }
+.form-horizontal .form-group {
+    margin-right: 350px;
+    margin-left: 0px;
+}
 
 
-.form-control {
+.form-control[_ngcontent-c2] {
     display: block;
-    width: 100%;
+    width:100%;
     height: 34px;
     padding: 16px 12px;
     font-size: 14px;
     line-height: 205.428571;
     color: #0a0f13;
-    width: 55%;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-control {
+    display: block;
+    height: 34px;
+    padding: 16px 12px;
+    font-size: 14px;
+    line-height: 205.428571;
+    color: #0a0f13;
+    width: 100%;
     background-image: none;
     border: 1px solid #ccc;
     border-radius: 9px;

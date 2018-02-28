@@ -13,6 +13,7 @@ import { LogoutComponent} from '../components/logout/logout.component';
 import { AppRoutingModule } from './app.routing';
 import { AddEmpComponent } from './components/add-emp/add-emp.component';
 import { ViewEmpComponent } from './components/view-emp/view-emp.component';
+import {Search } from '../app/pipe/search';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ViewEmpComponent } from './components/view-emp/view-emp.component';
     UsersComponent,
     LogoutComponent,
     AddEmpComponent,
-    ViewEmpComponent
+    ViewEmpComponent,
+    Search
   ],
   imports: [
     BrowserModule,
