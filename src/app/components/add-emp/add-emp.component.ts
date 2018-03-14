@@ -80,7 +80,7 @@ export class AddEmpComponent implements OnInit {
     // this.employees.push(this.model);
     this.adminService.addEmployee(this.form.value)
     .subscribe(
-      (model) => { console.log(model)
+      (form) => { console.log(form)
         this.successMessage ='Click Here go Login.';
         this.router.navigate(['/login']); 
      },

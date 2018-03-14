@@ -1,39 +1,51 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
 import {ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+// import { AppRoutingModule } from './app.routing';
 
-import { AdminService} from '../services/admin.service'
+
 import { AppComponent } from './app.component';
-import {DashboardComponent} from '../app/components/dashboard/dashboard.component';
-import { EmployeeComponent } from '../app/components/employee/employee.component';
-import { UsersComponent} from '../app/components/users/users.component';
-import { LogoutComponent} from '../app/components/logout/logout.component';
-
-import { AppRoutingModule } from './app.routing';
-import { AddEmpComponent } from './components/add-emp/add-emp.component';
-import { ViewEmpComponent } from './components/view-emp/view-emp.component';
-import {Search } from '../app/pipe/search';
+import { HomeComponent } from './componets/home/home.component';
+import { AskComponent } from './componets/ask/ask.component';
+import { AboutComponent } from './componets/about/about.component';
+import { BlogComponent } from './componets/blog/blog.component';
+import { ContactComponent } from './componets/contact/contact.component';
+import { TagsComponent } from './componets/tags/tags.component';
+import { LoginComponent } from './componets/login/login.component';
+import { SignupComponent } from './componets/signup/signup.component';
+import { EmpdashboardComponent } from './componets/empdashboard/empdashboard.component';
+import { AdmindashboardComponent } from './componets/admindashboard/admindashboard.component';
+import { ApproutingModule } from './app.routing';
+import { HeaderComponent } from './componets/header/header.component';
+import { FooterComponent } from './componets/footer/footer.component';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
-    EmployeeComponent,
-    UsersComponent,
-    LogoutComponent,
-    AddEmpComponent,
-    ViewEmpComponent,
-    Search
+    HomeComponent,
+    AskComponent,
+    AboutComponent,
+    BlogComponent,
+    ContactComponent,
+    TagsComponent,
+    LoginComponent,
+    SignupComponent,
+    EmpdashboardComponent,
+    AdmindashboardComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
+    ApproutingModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
+
   ],
-  providers: [AdminService],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

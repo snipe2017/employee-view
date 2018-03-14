@@ -1,31 +1,42 @@
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
-import {DashboardComponent} from '../app/components/dashboard/dashboard.component';
-import {EmployeeComponent} from '../app/components/employee/employee.component';
-import { UsersComponent} from '../app/components/users/users.component';
-import { LogoutComponent} from '../app/components/logout/logout.component';
-import {AddEmpComponent} from './components/add-emp/add-emp.component';
-import {ViewEmpComponent } from './components/view-emp/view-emp.component';
+import {AboutComponent} from './componets/about/about.component';
+import {AdmindashboardComponent} from './componets/admindashboard/admindashboard.component';
+import { AskComponent } from './componets/ask/ask.component';
+import { BlogComponent } from './componets/blog/blog.component';
+import {ContactComponent} from './componets/contact/contact.component';
+import {EmpdashboardComponent} from './componets/empdashboard/empdashboard.component';
+import {HomeComponent} from './componets/home/home.component';
+import {LoginComponent} from './componets/login/login.component';
+import {SignupComponent} from './componets/signup/signup.component';
+import {TagsComponent} from './componets/tags/tags.component';
+import { HeaderComponent } from './componets/header/header.component';
+import { FooterComponent } from './componets/footer/footer.component';
+
+
+
 const appRoutes: Routes = [
-    { path: '', redirectTo:'dashboard', pathMatch:'full'},
-    { path: 'dashboard', component:DashboardComponent },
-    { path: 'users', component: UsersComponent},
-    { path: 'logout', component: LogoutComponent},
-      { path: 'employee', component: EmployeeComponent,
-      children: [
-        { path: '', redirectTo: 'Add', pathMatch: 'full' },
-        { path: 'Add', component: AddEmpComponent, pathMatch:'full'},
-        { path: 'view', component: ViewEmpComponent, pathMatch:'full'},
-      ]},
+    // {path: 'about', component: AboutComponent},
+    {path: 'admindashboard', component: AdmindashboardComponent},
+    {path: 'ask', component: AskComponent},
+    {path: 'blog', component: BlogComponent},
+    {path: 'contact', component: ContactComponent},
+    {path: 'empdashboard', component: EmpdashboardComponent},
+    {path: '', component: HomeComponent},
+    {path: 'login', component: LoginComponent},
+    {path: 'signup', component: SignupComponent},
+    {path: 'tags', component: TagsComponent},
+    {path: 'header', component: HeaderComponent},
+    {path: 'footer', component: FooterComponent}
 ];
 
 @NgModule({
-    imports: [
-      RouterModule.forRoot(appRoutes, { useHash: true })
+    imports:[
+        RouterModule.forRoot(appRoutes,{ useHash: true })
     ],
     exports: [
-      RouterModule
+        RouterModule
     ]
-  })
+})
 
-  export class AppRoutingModule {}
+export class ApproutingModule {}
