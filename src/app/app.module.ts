@@ -5,10 +5,10 @@ import {ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { AdminService} from '../services/admin.service'
 import { AppComponent } from './app.component';
-import {DashboardComponent} from '../components/dashboard/dashboard.component';
-import { EmployeeComponent } from '../components/employee/employee.component';
-import { UsersComponent} from '../components/users/users.component';
-import { LogoutComponent} from '../components/logout/logout.component';
+import {DashboardComponent} from '../app/components/dashboard/dashboard.component';
+import { EmployeeComponent } from '../app/components/employee/employee.component';
+import { UsersComponent} from '../app/components/users/users.component';
+import { LogoutComponent} from '../app/components/logout/logout.component';
 
 import { AppRoutingModule } from './app.routing';
 import { AddEmpComponent } from './components/add-emp/add-emp.component';

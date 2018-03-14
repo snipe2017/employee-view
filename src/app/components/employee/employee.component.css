@@ -1,0 +1,8 @@
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    background-color: black;
+    color: rgb(219, 176, 161);
+    border-radius: px;
+}

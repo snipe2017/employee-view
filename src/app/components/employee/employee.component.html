@@ -1,0 +1,27 @@
+<nav class="navbar  navbar-dark bg-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active-link">
+        <a [routerLink]="['Add']">AddEmployee</a>
+      </li>
+      <li routerLinkActive="active-link">
+        <a [routerLink]="['view']">ViewEmployee</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+
+<div class="row">
+  <div class="col-lg-12">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="alert alert-info alert-dismissable" *ngIf="msg">
+            <a href="#" class="close" data-dismiss="alert" (click)="clickme()">&times;</a>
+            {{msg}}
+          </div>
+        </div>
+      </div>
+      <div class="clear-fix"></div>

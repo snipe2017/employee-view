@@ -1,4 +1,32 @@
-h1{
+
+body {
+    background-size: cover;
+ }
+ 
+ *[role="form"] {
+    max-width: 530px;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 0.3em;
+    background-color: #f2f2f2;
+ }
+ 
+ *[role="form"] h2 { 
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+ }
+ 
+
+
+
+
+/* h1{
     color: blue;
     background-color: antiquewhite;
     width: 38%;
@@ -32,4 +60,4 @@ h1{
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-}
+} */
